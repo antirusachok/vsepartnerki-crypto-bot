@@ -1,30 +1,17 @@
-# импорт asincio
 import asyncio
-# импорты CoinGeckoAPI
 from pycoingecko import CoinGeckoAPI
-# импорты aiogram
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-# импорты для fixed_handler
-# from aiogram import Dispatcher, types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
-# импортируем токен
 from config import TOKEN
-# импортируем клавиатуру
 import app.keyboard as kb
-# импортируем логирование
 import logging
-# импортируем MemoryStorage
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-# импортируем ссылки
 import app.currency as cc
-# импортируем базу данных sqlite
 import sqlite3
-# импорт для антифлуда
 from aiogram.utils.exceptions import Throttled
-# импорт команд бота
 from aiogram.types import BotCommand
 
 # инициализация CoinGeckoAPI
